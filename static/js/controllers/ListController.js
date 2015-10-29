@@ -1,0 +1,1 @@
+app.controller("ListController","plugins/dayList, plugins/tip",function(e,t){var n=this,r=$(n._dom),i=new Firebase("https://linxi.firebaseio.com/article");i.endAt().limit(100).on("value",function(t){var n=t.val(),r=[];for(var i in n)r.push({id:i,content:n[i].content,postTime:n[i].postTime});new e($("#daylist"),r.reverse())})})

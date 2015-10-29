@@ -1,0 +1,1 @@
+app.plugin("listBase",function(){function t(e,t,n){this.dom=e,this.initailize(t,n)}var e=this;return t.prototype.initailize=function(t,n){var r=this,i=[];n.forEach(function(n,r){i.push(koala._.render(t,n,e))}),this.dom.html(i.join(""))},t})

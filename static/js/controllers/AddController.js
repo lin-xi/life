@@ -1,5 +1,1 @@
-app.controller('AddController', function(){
-	var scope = this;
-	
-
-});
+app.controller("AddController","plugins/today, plugins/editor, plugins/tip",function(e,t,n){var r=this,i=$(r._dom);new e(i.find(".today"));var s=new t(i.find(".editor")),o=new Firebase("https://linxi.firebaseio.com/article");i.find(".cmd-save").on("click",function(e){if(s.getHTML()=="")return;var t=o.push();t.set({content:s.getHTML(),postTime:(new Date).getTime()},function(e){new n("保存成功")})})})

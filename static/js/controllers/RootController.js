@@ -1,0 +1,1 @@
+app.controller("RootController",function(){var e=this,t=$(e._dom),n=app.getCurrentRoute();n=="/"?$(".app-body").height($(window).height()):$(".app-body").height($(window).height()-40)})

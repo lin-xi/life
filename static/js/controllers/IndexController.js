@@ -1,5 +1,1 @@
-app.controller('IndexController', function(){
-	var scope = this;
-	
-
-});
+app.controller("IndexController",function(){var e=this,t=$(e._dom)})
